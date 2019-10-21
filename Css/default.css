@@ -1,1 +1,149 @@
+/* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+   background-color: #ffffff;
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #06003D;
+  font-family: Corbel; Arial;
+  font-size: 22pt;
+  margin-top: 10px;
+    vertical-align: middle;
+}
+
+
+#divcenter {
+  width: 670px;
+  height: 100px;
+  position: absolute;
+  left: 35%;
+  margin-left: -50px;
+	
+}
+
+
+#divmain{
+	display: table;
+	width: 100%;
+	align-content: center;
+}
+
+#divleft{
+
+	float: left;
+	width: 50%;
+}
+
+#divright{
+
+	float: left;
+	width: 50%;
+}
+
+
+@media screen and (max-width:800px){
+	
+	#divmain{
+		display:grid;
+		
+	}
+	#divleft{
+		width: 100%;
+	}
+	#divright{
+		width: 100%;
+	}
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+fieldset
+{
+  background-color: transparent;
+  max-width:500px;
+  padding:16px;	
+  border: dotted solid;
+  border-color: #979797;
+  border-width: 1px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+   border-radius:5px;	
+   margin: 0 auto;
+	
+}
+
+label {
+  width: 150px;
+  text-align: right;
+}
+
+input {
+  width: 100%;
+  padding: 5px 7px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+input[type=text]:focus {
+  border: 2px solid #001746;
+}
+
+
+.sign-off {
+  position:relative;
+  width:100%;
+  /*bottom:10px;*/
+  font-size:12px;
+  color:#999;
+  margin-top:50px;
+  text-align: center;
+  font-family: Verdana;
+  bottom:0px;
+}
+
+
+legend {
+   font-family: Verdana;
+   font-size: 14px;
+   background: #001746;
+   color: white;
+}
+
+label {
+   font-family: Verdana;
+   font-size: 11px;
+}
+
+
+.button {
+  background-color: #001746; /* Green */
+  border: 1px solid white;
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+    border-radius: 6px;
+}
+
+.button:hover {
+  background-color: #002e92; /* Green */
+  border: 1px solid white;
+  color: white;
+}
