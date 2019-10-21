@@ -1,7 +1,7 @@
 // JavaScript For Google API
 
-var CLIENT_ID = '179336743554-0umo1ehv88r955104uv1rq8r6rcrgk8q.apps.googleusercontent.com';
-var API_KEY = 'AIzaSyAP_fpzVgVSbPbY9VMP19qSDFu3FfBWYiw';
+var CLIENT_ID = 'Add CLEINT_ID here ..';
+var API_KEY = 'Add API_Key here ..';
 
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"];
 
