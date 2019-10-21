@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+	
+	
+<meta charset="utf-8">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	
+<link rel="stylesheet" type="text/css" href="Css/default.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="Scripts/default.js"></script>
+
+
+<title>Email Signature Generator</title>
+	
+</head>
+
+<body>
+<!--   <img alt="AISE Logo" src="http://www.aisegypt.com/uploaded/Social_icons/AISMLogo_EmailSignature.png" width="87" height="87" style="align-content: center" class="center">-->
+
+<br>
+<h1 class="title"> <img src="Img/generator_img.svg" width="32px" height="32px"> &nbsp; AIS Email Signature Generator &nbsp; <img src="Img/signature_img.svg" width="32px" height="32px"></h1>
+
+	
+<div id="divmain">
+
+<div id="divleft">
+	
+   <fieldset>
+		<legend>Your Information</legend>
+      <label for ="nm">Name </label>
+			<input type="text" name="nm" id="nm" required placeholder="Your pretty name goes here" onKeyUp="reviewFunction()"><br/>
+      <label for="pos">Position </label>
+	  <input type="text" name="pos" id="pos" required placeholder="Your job title" onKeyUp="reviewFunction()"><br/>
+	   <label for="addi">Additional Information </label>
+	  <input type="text" name="addi" id="addi" required placeholder="Optional: for any additional Information" onKeyUp="reviewFunction()"><br/>
+		<label for="tl">Mobile | Phone | Ext </label>
+         <input type="text" name="tl" id = "tl" required placeholder="M: (+xx) xx xxxx xxxx | P: xx xxxxxxxx | Ext: xxxx" onKeyUp="reviewFunction()"> <br>
+	   <label for="em">Email Address </label>
+	     <input type="text" name="em" id="em" required placeholder="Your email address username@domain.com" onKeyUp="reviewFunction()"> 
+	   <br>
+	   
+	    <label for="fb">Social Facebook </label>
+	     <input type="text" name="fb" id="fb" required placeholder="Facebook page URL" onKeyUp="reviewFunction()" value="https://www.facebook.com/AISEgypt/"> 
+	   <br>
+	   
+	   <label for="tw">Social Twitter </label>
+	     <input type="text" name="tw" id="tw" required placeholder="Twitter page URL" onKeyUp="reviewFunction()" value="https://twitter.com/AISEgypt_Main"> 
+	   <br>
+	   
+	   	<label for="ins">Social Instagram </label>
+	     <input type="text" name="ins" id="ins" required placeholder="Instagram page URL" onKeyUp="reviewFunction()" value="https://www.instagram.com/aisegypt_main/"> 
+	   <br>
+	   
+	   <label for="yo">Social Youtube </label>
+	     <input type="text" name="yo" id="yo" required placeholder="Youtube page URL" onKeyUp="reviewFunction()"> 
+	   <br>
+	   
+	   <label for="li">Social LinkedIn </label>
+	     <input type="text" name="lin" id="lin" required placeholder="Linkedin page URL" onKeyUp="reviewFunction()"> 
+	   <br>
+	   
+	   <label for="sin">Prefix signature with nice words </label>
+	     <input type="text" name="sin" id="sin" required placeholder="Sincerely, Thanks, Thank you, Regards," onKeyUp="reviewFunction()"> 
+	   <br>
+	</fieldset> 
+   <br>
+
+
+	</div>
+<div id="divright"	>
+
+<table border="0" align="center">
+	<tr>
+		<td>
+	
+<div id="htmlcode">
+
+<p id="sign" style="font-family: 'Verdana', 'Tahoma'; font-size: 9pt; color:#333;">Regards,</p>
+
+
+
+	<table cellspacing="0" cellpadding="0" style="font-family: 'Verdana', 'Tahoma'; font-size: 8pt; color:#333;">
+  <tbody>
+  	<tr>
+		<td colspan="4" style="background:none; border:solid 1px #EEE; border-width:1px 0 0 0; height:1px; width:100%; margin:0px 0px 0px 0px; padding-top:2px;padding-bottom:2px;"></td>
+	</tr>
+    <tr >
+      <td style="padding-right: 5px;"><a href="https://www.aisegypt.com/">
+		  <img alt="AISE Logo" src="https://www.aisegypt.com/uploaded/Social_icons/AISMLogo_EmailSignature.png" width="87" height="87"></a>
+	  </td>
+      <td width="130px" style="vertical-align: top;" >
+		  <p style="font-family: 'Verdana', 'Tahoma'; font-size: 8pt; color:#26215F;padding: 0px;margin: 1px;">
+		  <strong>AMERICAN <br>INTERNATIONAL<br> SCHOOL IN EGYPT</strong><br>MAIN CAMPUS</p><br>
+		  <p style="font-family: 'Verdana', 'Tahoma'; font-size: 7pt; color:#333; padding: 0px;margin: 1px;" >Cairo Festival City,<br> New Cairo, <br>Cairo, Egypt<br>
+          <a href="https://www.aisegypt.com/" title="www.aisegypt.com" target="_blank">www.aisegypt.com</a></p>
+	  </td>
+      <td width="10px" style="border-left: 2px solid #E1E1E1">&nbsp;</td>
+      <td style="vertical-align: top;">
+		  <strong><p id="name" style="font-family: 'Verdana', 'Tahoma'; font-size: 9pt; color:#444;padding: 0px;margin: 1px;" >Your Name</p></strong>
+        <p id="position" style="font-family: 'Verdana', 'Tahoma'; font-size: 8pt; color:#666;padding: 0px;margin: 1px;">Your position </p>
+		  <p id="additional" style="font-family: 'Verdana', 'Tahoma'; font-size: 8pt; color:#666;padding: 0px;margin: 1px;"> </p>
+		  <br>
+		  <p id="phone" style="font-family: 'Verdana', 'Tahoma'; font-size: 7pt; color:#666;padding: 0px;margin: 1px;">Mobile phone | Direct Number | Extension </p>
+		<p id="email" style="font-family: 'Verdana', 'Tahoma'; font-size: 7pt; color:#666;padding: 0px;margin: 1px;">
+			<a id="emaillink" href="mailto:" target="_blank" >Your email address</a><br>
+		</p>
+	  </td>
+    </tr>
+    <tr>
+      <td colspan="2"><a href="https://www.esoleducation.com/" target="_blank"><img src="https://www.aisegypt.com/uploaded/Social_icons/ESOLLogo_EmailSignature_large.png" alt="ESOL Logo"></a></td>
+      <td style="border-left: 2px solid #E1E1E1">&nbsp;</td>
+      <td>
+
+		  <a id="facebooklink" href="https://www.facebook.com/AISEgypt/" title="https://www.facebook.com/AISEgypt/" target="_blank">
+			  <img id="imgfacebook" src="https://www.aisegypt.com/uploaded/social_icons/facebook_circle.png" width="20" height="20"></a>
+		  
+		  <a id="twitterlink" href="https://twitter.com/AISEgypt_Main" title="https://twitter.com/AISEgypt_Main" target="_blank">
+			  <img id="imgtwitter" src="https://www.aisegypt.com/uploaded/social_icons/twitter_circle.png" width="20" height="20"></a>
+		  
+		  <a id="instagramlink" href="https://www.instagram.com/aisegypt_main/" title="" target="_blank">
+		  <img id="imginstagram" src="https://www.aisegypt.com/uploaded/social_icons/instagram_circle.png" width="20" height="20"></a>
+		  
+		  <a id="youtubelink" href="#" title="" target="_blank">
+			  <img id="imgyoutube" src="https://www.aisegypt.com/uploaded/social_icons/youtube_circle.png" width="20" height="20"></a>
+		  		  
+		  <a id="linkedinlink" href="#" title="" target="_blank">
+		  <img id="imglinkedin" src="https://www.aisegypt.com/uploaded/social_icons/linkedin_circle.png" width="20" height="20"></a><br>
+		  <span style="font-family: 'Verdana', 'Tahoma'; font-size: 6pt; color:#666; padding: 0px; display: block; ">
+		  <a href="https://sites.google.com/aisegypt.com/ais30/home">*** AISE TURNS 30 ***</a>
+	   </span>
+	  </td>
+    </tr>
+	<tr>
+	<td colspan="4" style="background:none; border:solid 1px #EEE; border-width:0 0 1px 0; height:1px; width:100%; margin:0px 0px 0px 0px; padding-top:2px;padding-bottom:2px;">
+	</td>
+	</tr>
+	</tbody>
+</table>  
+<!--<hr size="0px" style="height:1px; border:none; color:#EEE; background-color:#EEE;">-->
+
+</div>
+
+ 	
+ <br>
+	
+<span style="color: #8A8A8A; font-family: 'Calibri', sans-serif; font-size: 8pt; font-weight: regular; display: block;"><b>Confidentiality Note: </b> Please be sure not to include any personal information such as bank account and credit card into your business signature.</span>
+
+	<br>
+		
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			
+<button class="button" onclick="copyClipboard()">Copy to clipboard</button>
+
+<button class="button" onClick="handleClientLoad()">Auto Apply to Gmail</button>
+
+<!--<button id="authorize_button" class="googlebutton" >Authorize</button><br>
+<button id="signout_button" class="googlebutton" >Sign out</button>-->
+		
+			
+			
+		</td>
+	</tr>
+</table>	
+	   
+
+	</div>
+</div>
+
+<div id="code">
+</div>
+
+   <p class="sign-off">	&copy; By AIS Awesome Application Development Team !!</p>   
+	
+	<script src="Scripts/GoogleAPI.js"></script>	
+<!--	<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>-->
+
+	<script async defer src="https://apis.google.com/js/api.js"></script>
+</body>
+
+
+</html>
+
+
+
